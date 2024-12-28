@@ -1,85 +1,13 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
-    <title>Instabite</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body>
-
-    <!-- Community Section -->
-    <section class="py-16 bg-orange-400">
-        <div class="container mx-auto px-4">
-            <h2 class="text-3xl font-bold text-center mb-8 text-white">
-                Join The InstaBite Community
-            </h2>
-            <div class="max-w-xl mx-auto">
-                <!-- Benefits List -->
-                <ul class="space-y-3 mt-6">
-                    <li class="flex items-center">
-                        <span class="text-green-500 mr-2">✓</span>
-                        <span class="text-white">Access to exclusive recipes</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="text-green-500 mr-2">✓</span>
-                        <span class="text-white">Weekly live cooking sessions</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="text-green-500 mr-2">✓</span>
-                        <span class="text-white">Connect with fellow young chefs</span>
-                    </li>
-                    <li class="flex items-center">
-                        <span class="text-green-500 mr-2">✓</span>
-                        <span class="text-white">Personal mentoring opportunities</span>
-                    </li>
-                </ul>
-
-                <!-- Sign Up Form -->
-                <form class="mt-6" id="signupForm">
-                    <div class="flex gap-4">
-                        <input
-                            type="email"
-                            placeholder="Enter your email"
-                            class="flex-1 px-4 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500"
-                            required
-                        >
-                        <button
-                            type="submit"
-                            class="bg-blue-500 text-white px-6 py-2 rounded-lg hover:bg-blue-600 transition-colors"
-                        >
-                            Join Now
-                        </button>
-                    </div>
-                </form>
-
-                <!-- Community Stats -->
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-12">
-                    <div class="text-center">
-                        <div class="text-3xl font-bold text-white">10,000+</div>
-                        <div class="text-white">Active Users</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-bold text-white">500+</div>
-                        <div class="text-white">Recipes Available</div>
-                    </div>
-                    <div class="text-center">
-                        <div class="text-3xl font-bold text-white">2,500+</div>
-                        <div class="text-white">Successful Cooks</div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <script>
-        // Handle form submissions
-        document.getElementById('signupForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Sign up form submitted!');
-        });
-
-    </script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>

@@ -13,7 +13,7 @@ export default function Navbar() {
         <div className="flex justify-between h-16">
           <Link to="/" className="flex-shrink-0 flex items-center">
             <ChefHat className="h-8 w-8 text-orange-500" />
-            <span className="ml-2 text-xl font-bold text-gray-900">Young Chefs Hub</span>
+            <span className="ml-2 text-xl font-bold text-gray-900">InstaBite</span>
           </Link>
 
          
