@@ -1,3 +1,4 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+
+container mx-auto px-4 {
+    background-color: rgb(216, 127, 10);
+  }
