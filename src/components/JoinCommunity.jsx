@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Users, UtensilsCrossed, Trophy, ArrowRight } from 'lucide-react';
 import BenefitsList from './BenefitsList';
 import SignUpForm from './SignUpForm';
@@ -39,3 +39,4 @@ function JoinCommunity() {
 }
 
 export default JoinCommunity;
+
