@@ -1,34 +1,32 @@
-
+import React from 'react';
 import './App.css';
 import Navbar from './Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import About from './about'
-import Home from './home'
-import FooterSection from './components/Footer/FooterSection'
+import About from './about';
+import Home from './home';
+//import { Header } from './components/Header';
+//import { CategoryGrid } from './components/CategoryGrid';
 
 
 function App() {
-  const title ="InstaBite"
+  const title = "InstaBite";
+
   return (
     <div className="min-h-screen bg-white">
 
-
+      
       <Router>
         <div className="min-h-screen bg-gray-50">
           <Navbar />
-         
           <Routes>
-          <Route path="/" element={<Home />} /> 
+            <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />
           </Routes>
         </div>
       </Router>
 
-        
-   
-      </div>
-
-      
+     
+    </div>
   );
 }
 
