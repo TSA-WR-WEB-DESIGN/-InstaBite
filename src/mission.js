@@ -3,7 +3,7 @@ import { Heart } from 'lucide-react';
 
 export default function Mission() {
   return (
-    <div className="py-16 bg-white">
+    <div className="bg-gradient-to-t from-orange-50 to-white py-16 bg-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <Heart className="w-12 h-12 text-orange-500 mx-auto mb-4" />
