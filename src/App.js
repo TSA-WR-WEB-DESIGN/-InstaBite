@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import About from './about'
 import Home from './home'
+import FooterSection from './components/Footer/FooterSection'
 
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <div className="min-h-screen bg-gray-50">
           <Navbar />
+         
           <Routes>
           <Route path="/" element={<Home />} /> 
             <Route path="/about" element={<About />} />
@@ -22,8 +24,11 @@ function App() {
         </div>
       </Router>
 
+        
    
       </div>
+
+      
   );
 }
 
