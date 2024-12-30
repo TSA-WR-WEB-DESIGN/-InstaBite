@@ -4,7 +4,7 @@ import React from 'react';
 
 import  JoinCommunity  from './components/JoinCommunity';
 
-import { PopularRecipes } from './components/PopularRecipes';
+import { PopularRecipes } from './components/Popular Recipes/PopularRecipes';
 import FooterSection from './components/Footer/FooterSection';
 import { CategoryGrid } from './components/CategoryGrid';
 

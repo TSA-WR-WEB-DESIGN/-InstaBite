@@ -24,7 +24,7 @@ export function CategoryGrid() {
   ];
 
   return (
-    <section className="py-16 px-4 bg-gray-50">
+    <section className=" bg-gradient-to-t from-orange-50 to-white py-16 px-4 bg-gray-50 -mt-20">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Choose Your Level

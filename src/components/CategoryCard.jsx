@@ -3,7 +3,7 @@ import { ChefHat, Utensils, Trophy } from 'lucide-react';
 
 const levelStyles = {
   beginner: 'bg-gradient-to-br from-green-400 to-blue-500 hover:from-green-500 hover:to-blue-600 border-10 border-green-400',
-  intermediate: 'bg-gradient-to-tl from-purple-300 to-purple-600 hover:from-purple-400 hover:to-purple-700 border-10 border-purple-500',
+  intermediate: 'bg-gradient-to-tl from-purple-300 to-purple-900 hover:from-purple-400 hover:to-purple-800 border-10 border-purple-500',
   advanced: 'bg-gradient-to-tl from-red-600 to-red-400 hover:from-red-700 hover:to-red-500 border-10 border-red-500',  // Updated to lighter shades of red
 };
 
