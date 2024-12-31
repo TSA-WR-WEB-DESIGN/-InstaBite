@@ -4,7 +4,7 @@ import Navbar from './Navbar';
 import Home from './Pages/home';
 import Recipes from './Recipes';
 import About from './Pages/about';
-import RecipeFinder from './Pages/RecipeFinder.jsx';
+
 
 
 function App() {
@@ -15,7 +15,6 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/recipes" element={<Recipes />} />
-          <Route path="/finder" element={<RecipeFinder />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </div>
