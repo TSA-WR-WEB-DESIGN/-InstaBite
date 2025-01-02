@@ -4,10 +4,13 @@ import Navbar from './Navbar';
 import Home from './Pages/home';
 import Recipes from './Recipes';
 import About from './Pages/about';
+import MainApp from './components/A'; // Updated import statement
 
+export const App = () => {
+  return <MainApp />;
+};
 
-
-function App() {
+function Main() {
   return (
     <Router>
       <div className="min-h-screen bg-gray-50">
@@ -22,4 +25,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;
