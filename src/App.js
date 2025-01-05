@@ -6,6 +6,7 @@ import Recipes from './Recipes';
 import About from './Pages/about';
 import MainApp from './components/A'; // Updated import statement
 
+
 export const App = () => {
   return <MainApp />;
 };
@@ -15,6 +16,7 @@ function Main() {
     <Router>
       <div className="min-h-screen bg-gray-50">
         <Navbar />
+      
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/recipes" element={<Recipes />} />

@@ -32,13 +32,14 @@ const HeroContent = ({ children }) => (
   </div>
 );
 
+// Updated to have a beige background
 const heroStyle = {
   display: 'flex',
   flexDirection: 'column',
   justifyContent: 'center',
   alignItems: 'center',
   height: '100vh', // Full viewport height
-  backgroundColor: '#f9fafb', // Light gray background
+  backgroundColor: '#f5f5dc', // Beige background
   padding: '20px',
   textAlign: 'center',
   position: 'relative',

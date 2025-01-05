@@ -12,21 +12,23 @@ const A = () => {
   };
 
   return (
-    <Hero>
-      <Logo />
-      <Title />
-      <Subtitle />
-      <ActionButtons
-        onFindRecipe={handleFindRecipe}
-        onBrowseRecipes={handleBrowseRecipes}
-      />
-    </Hero>
+    <div style={{ backgroundColor: 'beige', minHeight: '100vh', padding: '20px' }}>
+      <Hero>
+        <Logo />
+        <Title />
+        <Subtitle />
+        <ActionButtons
+          onFindRecipe={handleFindRecipe}
+          onBrowseRecipes={handleBrowseRecipes}
+        />
+      </Hero>
+    </div>
   );
 };
 
 const Logo = () => (
   <div className="flex justify-center mb-8">
-    <ChefHat className="h-32 w-32 text-orange-500" /> {/* Increased size */}
+    <ChefHat className="h-32 w-32 text-orange-500" />
   </div>
 );
 
@@ -45,8 +47,8 @@ const Subtitle = () => (
 const ActionButtons = ({ onFindRecipe, onBrowseRecipes }) => (
   <div className="flex justify-center space-x-6">
     <Button onClick={onFindRecipe} className="flex items-center space-x-2">
-      <Search className="h-6 w-6" /> {/* Slightly larger icon */}
-      <span className="text-lg">Find a Recipe</span> {/* Larger text */}
+      <Search className="h-6 w-6" />
+      <span className="text-lg">Find a Recipe</span>
     </Button>
     <Button onClick={onBrowseRecipes} className="flex items-center space-x-2">
       <BookOpen className="h-6 w-6" />
