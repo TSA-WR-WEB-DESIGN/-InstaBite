@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { Clock, Users, ChefHat } from 'lucide-react';
 
 export function RecipeCard({ name, image, difficulty, timeInMinutes, servings }) {
@@ -37,10 +38,13 @@ export function RecipeCard({ name, image, difficulty, timeInMinutes, servings })
           </div>
         </div>
 
-        <button className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2">
+        <Link
+          to={`/recipe/${encodeURIComponent(name)}`}
+          className="w-full bg-indigo-600 text-white py-2 rounded-lg hover:bg-indigo-700 transition-colors flex items-center justify-center gap-2"
+        >
           <ChefHat className="w-4 h-4" />
           View Recipe
-        </button>
+        </Link>
       </div>
     </div>
   );
