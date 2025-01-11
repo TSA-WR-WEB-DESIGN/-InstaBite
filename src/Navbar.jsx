@@ -75,10 +75,10 @@ export default function Navbar() {
             </div>
 
             <Link 
-              to="/finder" 
-              className={`text-gray-600 hover:text-orange-500 ${isActive('/finder') ? 'text-orange-500' : ''}`}
+              to="/documentation" 
+              className={`text-gray-600 hover:text-orange-500 ${isActive('/documentation') ? 'text-orange-500' : ''}`}
             >
-              Recipe Finder
+              Documentation 
             </Link>
             <Link 
               to="/about" 
@@ -86,9 +86,6 @@ export default function Navbar() {
             >
               About
             </Link>
-            <button className="bg-orange-500 text-white px-4 py-2 rounded-full hover:bg-orange-600 transition">
-              Login / Register
-            </button>
           </div>
 
           <button 
@@ -171,11 +168,11 @@ export default function Navbar() {
             </div>
             
             <Link 
-              to="/finder" 
-              className={`block px-3 py-2 text-gray-600 hover:text-orange-500 ${isActive('/finder') ? 'text-orange-500' : ''}`}
+              to="/documentation" 
+              className={`block px-3 py-2 text-gray-600 hover:text-orange-500 ${isActive('/documentation') ? 'text-orange-500' : ''}`}
               onClick={() => setIsMenuOpen(false)}
             >
-              Recipe Finder
+              Documentation
             </Link>
             <Link 
               to="/about" 
@@ -184,9 +181,6 @@ export default function Navbar() {
             >
               About
             </Link>
-            <button className="w-full text-left px-3 py-2 text-orange-500">
-              Login / Register
-            </button>
           </div>
         </div>
       )}

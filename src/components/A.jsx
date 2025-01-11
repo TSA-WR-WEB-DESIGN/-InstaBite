@@ -46,14 +46,6 @@ const Subtitle = () => (
 
 const ActionButtons = ({ onFindRecipe, onBrowseRecipes }) => (
   <div className="flex justify-center space-x-6">
-    <Button onClick={onFindRecipe} className="flex items-center space-x-2">
-      <Search className="h-6 w-6" />
-      <span className="text-lg">Find a Recipe</span>
-    </Button>
-    <Button onClick={onBrowseRecipes} className="flex items-center space-x-2">
-      <BookOpen className="h-6 w-6" />
-      <span className="text-lg">Browse Recipes</span>
-    </Button>
   </div>
 );
 
