@@ -547,36 +547,30 @@ export function RecipeList() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-50 py-8">
+    <div className="min-h-screen bg-gray-50 py-8 mt-16"> {/* Added mt-16 for margin top */}
       <div className="max-w-7xl mx-auto px-4">
         <div className="flex items-center mb-8">
           <Link to="/" className="flex items-center text-gray-600 hover:text-gray-900">
-            <ArrowLeft className="w-5 h-5 mr-2" />
-            Back to Categories
+            <ArrowLeft className="mr-2" />
+            <span>Back to Home</span>
           </Link>
         </div>
-        
-        <h1 className="text-4xl font-bold text-gray-900 mb-8">{levelTitles[level]}</h1>
-        
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <h2 className="text-3xl font-semibold text-gray-900">{levelTitles[level]}</h2>
+        <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {levelRecipes.map((recipe, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-              <img 
-                src={`${recipe.image}?auto=format&fit=crop&w=800&q=80`} 
-                alt={recipe.title}
-                className="w-full h-48 object-cover"
-              />
-              <div className="p-6">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{recipe.title}</h3>
-                <p className="text-gray-600 mb-4">{recipe.description}</p>
-                <div className="flex items-center justify-between text-gray-500">
-                  <div className="flex items-center">
-                    <Clock className="w-4 h-4 mr-1" />
+            <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">
+              <img src={recipe.image} alt={recipe.title} className="w-full h-48 object-cover" />
+              <div className="p-4">
+                <h3 className="text-xl font-semibold text-gray-800">{recipe.title}</h3>
+                <p className="text-gray-600 mt-2">{recipe.description}</p>
+                <div className="flex mt-4 text-sm text-gray-500">
+                  <div className="flex items-center mr-4">
+                    <Clock className="mr-1" />
                     <span>{recipe.time}</span>
                   </div>
                   <div className="flex items-center">
-                    <Users className="w-4 h-4 mr-1" />
-                    <span>Serves {recipe.servings}</span>
+                    <Users className="mr-1" />
+                    <span>{recipe.servings} servings</span>
                   </div>
                 </div>
               </div>

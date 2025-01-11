@@ -38,8 +38,8 @@ function FeaturedCardProps() {
   ];
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="max-w-6xl mx-auto px-4 py-16">
+    <div className="h-auto bg-gray-50"> {/* Changed from min-h-screen to h-auto */}
+      <div className="max-w-6xl mx-auto px-4 py-12">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
             Why Cook With Us?

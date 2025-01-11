@@ -244,6 +244,28 @@ export const recipes = [
         title: "Falafel Wrap",
         description: "Crispy falafel with fresh veggies and tahini sauce wrapped in pita bread",
         image: "https://gourmandelle.com/wp-content/uploads/2018/02/falafel-wrap-falafel-la-lipie-reteta-1.jpg",
-        
-    }   
+        time: "20 min",
+        servings: 4,
+        difficulty: "Easy",
+        category: "Mediterranean"
+    },
+    {
+        id: 26,
+        title: "Blueberry Pancake Stack",
+        time: "20 mins",
+        servings: 4,
+        difficulty: "Easy",
+        description: "Fluffy buttermilk pancakes studded with fresh blueberries, served with maple syrup and butter.",
+        image: "https://images.unsplash.com/photo-1528207776546-365bb710ee93?auto=format&fit=crop&w=800&q=80",
+        category: "Breakfast"
+    },   
+    {
+        title: "Classic Eggs Benedict",
+        time: "25 mins",
+        servings: 2,
+        difficulty: "Intermediate",
+        description: "Perfectly poached eggs on toasted English muffins with Canadian bacon and creamy hollandaise sauce.",
+        image: "https://www.simplyrecipes.com/thmb/mV9WLk9UZHKmOUBiODTqjtj1LSM=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Eggs-Benedict-LEAD-2-a0ba4b628b214482973087b6bbce93a2.jpg",
+        category: "Breakfast"
+      },
 ]     

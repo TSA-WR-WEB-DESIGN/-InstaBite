@@ -7,6 +7,9 @@ import About from './Pages/about';
 import Documentation from './Pages/documentation';
 import { CategoryGrid } from './components/CategoryGrid';
 import { RecipeList } from './components/RecipeList';
+import Breakfast from './Pages/breakfast';
+import Dinner from './Pages/dinner';
+import Lunch from './Pages/lunch';
 import MainApp from './components/A'; // Updated import statement
 
 
@@ -28,6 +31,9 @@ function Main() {
           <Route path="/about" element={<About />} />
           <Route path="/categories" element={<CategoryGrid />} />
           <Route path="/recipes/:level" element={<RecipeList />} />
+          <Route path="/breakfast" element={<Breakfast />} />
+          <Route path="/lunch" element={<Lunch />} />
+          <Route path="/dinner" element={<Dinner />} />
         </Routes>
       </div>
     </Router>

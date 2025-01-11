@@ -47,39 +47,28 @@ export default function Navbar() {
                     All Recipes
                   </Link>
                   <Link
-                    to="/recipes/breakfast"
+                    to="/breakfast"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500"
                   >
                     Breakfast
                   </Link>
                   <Link
-                    to="/recipes/lunch"
+                    to="/lunch"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500"
                   >
                     Lunch
                   </Link>
                   <Link
-                    to="/recipes/dinner"
+                    to="/dinner"
                     className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500"
                   >
                     Dinner
-                  </Link>
-                  <Link
-                    to="/recipes/desserts"
-                    className="block px-4 py-2 text-sm text-gray-700 hover:bg-orange-50 hover:text-orange-500"
-                  >
-                    Desserts
                   </Link>
                 </div>
               </div>
             </div>
 
-            <Link 
-              to="/documentation" 
-              className={`text-gray-600 hover:text-orange-500 ${isActive('/documentation') ? 'text-orange-500' : ''}`}
-            >
-              Documentation 
-            </Link>
+            <Link to="/documentation" className={`block px-3 py-2 text-gray-600 hover:text-orange-500 ${isActive('/documentation') ? 'text-orange-500' : ''}`} onClick={() => setIsMenuOpen(false)} > Documentation </Link>
             <Link 
               to="/about" 
               className={`text-gray-600 hover:text-orange-500 ${isActive('/about') ? 'text-orange-500' : ''}`}
@@ -167,13 +156,7 @@ export default function Navbar() {
               )}
             </div>
             
-            <Link 
-              to="/documentation" 
-              className={`block px-3 py-2 text-gray-600 hover:text-orange-500 ${isActive('/documentation') ? 'text-orange-500' : ''}`}
-              onClick={() => setIsMenuOpen(false)}
-            >
-              Documentation
-            </Link>
+            <Link to="/documentation" className={`text-gray-600 hover:text-orange-500 ${isActive('/documentation') ? 'text-orange-500' : ''}`} > Documentation </Link>
             <Link 
               to="/about" 
               className={`block px-3 py-2 text-gray-600 hover:text-orange-500 ${isActive('/about') ? 'text-orange-500' : ''}`}
