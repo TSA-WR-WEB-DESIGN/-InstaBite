@@ -68,7 +68,11 @@ export default function Navbar() {
               </div>
             </div>
 
-            <Link to="/documentation" className={`block px-3 py-2 text-gray-600 hover:text-orange-500 ${isActive('/documentation') ? 'text-orange-500' : ''}`} onClick={() => setIsMenuOpen(false)} > Documentation </Link>
+            <Link to="/documentation" 
+            className={`block px-3 py-2 text-gray-600 hover:text-orange-500 ${isActive('/documentation') ? 'text-orange-500' : ''}`} onClick={() => setIsMenuOpen(false)} 
+            >
+               Documentation 
+            </Link>
             <Link 
               to="/about" 
               className={`text-gray-600 hover:text-orange-500 ${isActive('/about') ? 'text-orange-500' : ''}`}
@@ -156,7 +160,13 @@ export default function Navbar() {
               )}
             </div>
             
-            <Link to="/documentation" className={`text-gray-600 hover:text-orange-500 ${isActive('/documentation') ? 'text-orange-500' : ''}`} > Documentation </Link>
+            <Link 
+              to="/documentation" 
+              className={`text-gray-600 hover:text-orange-500 ${isActive('/documentation') ? 'text-orange-500' : ''}`} 
+              onClick={() => setIsMenuOpen(false)}
+            > 
+            Documentation 
+            </Link>
             <Link 
               to="/about" 
               className={`block px-3 py-2 text-gray-600 hover:text-orange-500 ${isActive('/about') ? 'text-orange-500' : ''}`}

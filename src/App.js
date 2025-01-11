@@ -4,6 +4,7 @@ import Navbar from './Navbar';
 import Home from './Pages/home';
 import Recipes from './Recipes';
 import About from './Pages/about';
+import Documentation from './Pages/documentation';
 import { CategoryGrid } from './components/CategoryGrid';
 import { RecipeList } from './components/RecipeList';
 import { PopularRecipes } from './components/Popular Recipes/PopularRecipes';
@@ -23,6 +24,7 @@ function Main() {
           <Route path="/" element={<Home />} />
           <Route path="/recipes" element={<Recipes />} />
           <Route path="/about" element={<About />} />
+          <Route path="/documentation" element={<Documentation />} />
           <Route path="/categories" element={<CategoryGrid />} />
           <Route path="/recipes/:level" element={<RecipeList />} />
           <Route path="/popular-recipes" element={<PopularRecipes />} />
