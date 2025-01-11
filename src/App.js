@@ -10,6 +10,9 @@ import { RecipeList } from './components/RecipeList';
 import { PopularRecipes } from './components/Popular Recipes/PopularRecipes';
 import { RecipeDetails } from './components/Popular Recipes/RecipeDetails';
 import MainApp from './components/A';
+import Breakfast from './Pages/breakfast';
+import Dinner from './Pages/dinner';
+import Lunch from './Pages/lunch';
 
 export const App = () => {
   return <MainApp />;
@@ -29,6 +32,9 @@ function Main() {
           <Route path="/recipes/:level" element={<RecipeList />} />
           <Route path="/popular-recipes" element={<PopularRecipes />} />
           <Route path="/recipe/:recipeName" element={<RecipeDetails />} />
+          <Route path="/breakfast" element={<Breakfast />} />
+          <Route path="/lunch" element={<Lunch />} />
+          <Route path="/dinner" element={<Dinner />} />
         </Routes>
       </div>
     </Router>
