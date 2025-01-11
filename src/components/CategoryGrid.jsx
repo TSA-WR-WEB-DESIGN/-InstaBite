@@ -12,19 +12,19 @@ export function CategoryGrid() {
     {
       title: 'Intermediate',
       subtitle: 'Getting Better',
-      recipeCount: 50,
+      recipeCount: 25,
       level: 'intermediate',
     },
     {
       title: 'Advanced',
       subtitle: 'Kitchen Pro',
-      recipeCount: 75,
+      recipeCount: 25,
       level: 'advanced',
     },
   ];
 
   return (
-    <section className=" bg-gradient-to-t from-orange-50 to-white py-16 px-4 bg-gray-50 -mt-20">
+    <section className="bg-gradient-to-t from-orange-50 to-white py-16 px-4 bg-gray-50 -mt-20">
       <div className="max-w-7xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
           Choose Your Level
@@ -42,3 +42,5 @@ export function CategoryGrid() {
     </section>
   );
 }
+
+
